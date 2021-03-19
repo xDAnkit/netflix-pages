@@ -1,2 +1,2 @@
 # netflix-pages
-Netflix pages designed using HTML &amp; CSS
+Netflix UI pages designed using HTML &amp; CSS

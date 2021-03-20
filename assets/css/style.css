@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+p,
+h1,
+h2,
+a,
+input,
+label,
+select,
+span {
+  font-family: "Quicksand", sans-serif !important;
+  color: #333;
+}
+body {
+  background-image: url("/assets/images/IN-en-20210315-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+}
+.container {
+  background: rgb(0 0 0 / 51%);
+}
+nav {
+  padding: 18px 0 0 18px;
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.5) 0,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.logo-container {
+  margin-left: 25px;
+}
+.netflix-logo {
+  color: aliceblue;
+}
+.svg-nfLogo {
+  fill: #e50914;
+  line-height: 90px;
+}
+.svg-nfLogo,
+.svg-icon,
+.svg-icon-netflix-logo {
+  height: 45px;
+  width: 167px;
+}
+
+/**Container Style*/
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Text CSS*/
+
+.text-xs {
+  font-size: 12px;
+}
+.text-sm {
+  font-size: 14px;
+  color: #757575;
+}
+.text-md {
+  font-size: 16px;
+  color: #757575;
+}
+.text-lg {
+  font-size: 20px;
+  color: #757575;
+}
+.text-xlg {
+  font-size: 26px;
+  color: #757575;
+}
+.text-xxlg {
+  font-size: 32px;
+  color: #757575;
+}
+.text-bold {
+  font-weight: bold;
+}
+.horizontal-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.horizontal-list li {
+  padding: 12px 0 12px 0;
+  width: 260px;
+}
+a {
+  text-decoration: none;
+}
+.footer {
+  margin-top: 80px;
+  padding: 36px 180px 36px 180px;
+  display: flex;
+  flex-direction: column;
+  background: #000000b3;
+}
+a {
+  color: #757575;
+}
+
+/*Flex*/
+.d-flex {
+  display: flex;
+}
+.row {
+  flex-direction: row;
+}
+.j-space-between {
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/*Section  CSS*/
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Form Group*/
+.form-group {
+  display: flex;
+}
+
+.form-group .text-box {
+  padding: 16px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #333;
+}
+
+.form-group {
+  position: relative;
+  margin: 20px 0 20px;
+}
+
+.input-group {
+  position: relative;
+  margin: 40px 0 20px;
+}
+
+.input-text {
+  font-size: 16px;
+  padding: 16px;
+  display: block;
+  color: white;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  border: 0;
+  border-radius: 5px;
+  background-color: #333;
+}
+
+.input-text:focus {
+  outline: none;
+}
+
+label {
+  color: #999;
+  font-size: 14px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 16px;
+  top: 18px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.input-text:focus ~ label,
+.input-text:valid ~ label {
+  top: 4px;
+  font-size: 11px;
+}
+
+.bar {
+  position: relative;
+  display: block;
+}
+
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+.input-text:focus ~ .bar:before,
+.input-text:focus ~ .bar:after {
+  width: 50%;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.input-text:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.2s ease;
+  -moz-animation: inputHighlighter 0.2s ease;
+  animation: inputHighlighter 0.2s ease;
+}
+
+/* animations */
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: transparent;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  from {
+    background: transparent;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: transparent;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+/*Card CSS*/
+.card {
+  padding: 60px 68px 40px;
+  margin-bottom: 90px;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.card-body {
+  margin: 28px 0 8px 0;
+}
+
+/*Text*/
+.color-light-white {
+  color: #b3b3b3;
+}
+.color-white {
+  color: #fff;
+}
+.color-link {
+  color: #0071e1;
+}
+
+/*Button*/
+.btn {
+  padding: 12px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.btn-lg {
+  flex: 1;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: #e50914;
+  color: white;
+}
+
+/*Margin*/
+.mt-xlg {
+  margin-top: 32px;
+}
+.ml-6 {
+  margin-left: 6px;
+}
+.mt-md {
+  margin-top: 18px;
+}
+
+.my-12 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+/*Icons*/
+.fa {
+  padding: 4px;
+  font-size: 12px !important;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+/*Align Items*/
+.align-baseline {
+  align-items: baseline;
+}
+
+/*Custom Dropdown*/
+.n-dropdown {
+  flex-direction: row;
+  padding: 12px;
+  border: 1px solid #5a5a5ad4;
+}
+
+.n-dropdown select {
+  background: transparent;
+  border: none;
+  color: #7f7f7f;
+  margin-left: 12px;
+}
